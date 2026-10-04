@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIM PAM — Le Pong de survie</title>
+<meta name="description" content="PIM PAM : le jeu de raquette de survie, rapide et coloré. Tiens le plus longtemps possible face à l'IA et ses boss.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0f1114; --panel: #1d2025; --edge: #3c424c; --ink: #eceff2; --muted: #9aa1aa; --gold: #ffb454; --green: #7fca7f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); color: var(--ink);
+         font: 16px/1.6 Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  .hazard { height: 10px; background: repeating-linear-gradient(-45deg, #ffcf33 0 12px, #17181c 12px 24px); }
+  main { flex: 1; max-width: 720px; margin: 0 auto; padding: 56px 16px; text-align: center; }
+  .logo { font: 700 clamp(56px, 16vw, 110px)/1 "Chakra Petch", sans-serif; letter-spacing: .06em; margin: 0; }
+  .logo span:nth-child(1) { color: #ffb454 } .logo span:nth-child(2) { color: #ff4d4d } .logo span:nth-child(3) { color: #7fca7f }
+  .logo span:nth-child(4) { color: #79b0ff } .logo span:nth-child(5) { color: #b07cff } .logo span:nth-child(6) { color: #ff5d8f }
+  .tag { font: 600 15px "Chakra Petch", sans-serif; letter-spacing: .3em; color: var(--muted); margin: 14px 0 34px; text-transform: uppercase; }
+  .card { background: var(--panel); border: 2px solid var(--edge); border-radius: 14px; padding: 24px; margin: 0 auto 18px; text-align: left; }
+  h2 { font: 700 20px "Chakra Petch", sans-serif; margin: 0 0 8px; color: var(--gold); }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 26px; }
+  .btn { font: 700 15px "Chakra Petch", sans-serif; letter-spacing: .08em; text-decoration: none; padding: 14px 22px; border-radius: 10px;
+         background: var(--gold); color: #14161a; border: 2px solid #ffd59a; }
+  .btn.alt { background: var(--panel); color: var(--ink); border-color: var(--edge); }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 20px 16px 30px; }
+  a { color: #79b0ff; }
+</style>
+</head>
+<body>
+<div class="hazard"></div>
+<main>
+  <h1 class="logo"><span>P</span><span>I</span><span>M</span> <span>P</span><span>A</span><span>M</span></h1>
+  <div class="tag">Le Pong de survie · The survival Pong</div>
+
+  <div class="card">
+    <h2>Le jeu</h2>
+    <p>Tiens le plus longtemps possible face à l'IA : enchaîne les renvois pour faire grimper le multiplicateur, attrape les bonus, survis aux événements et bats les boss. Skins, passe de saison, trophées, défis du jour et classement en ligne.</p>
+  </div>
+  <div class="card">
+    <h2>The game</h2>
+    <p>Survive as long as you can against the AI: chain returns to boost your multiplier, grab bonuses, survive random events and beat the bosses. Skins, season pass, trophies, daily challenges and an online leaderboard.</p>
+  </div>
+
+  <div class="links">
+    <a class="btn" href="privacy.html">Confidentialité · Privacy</a>
+    <a class="btn alt" href="mailto:theo.brochard2@gmail.com">Contact</a>
+  </div>
+</main>
+<footer>© 2026 Théo Brochard — PIM PAM · <a href="mailto:theo.brochard2@gmail.com">theo.brochard2@gmail.com</a></footer>
+<div class="hazard"></div>
+</body>
+</html>
