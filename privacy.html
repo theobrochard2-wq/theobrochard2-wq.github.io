@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIM PAM — Règles de confidentialité / Privacy Policy</title>
+<meta name="description" content="Règles de confidentialité du jeu mobile PIM PAM. Privacy policy of the PIM PAM mobile game.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1114; --panel: #1d2025; --edge: #3c424c; --ink: #eceff2; --muted: #9aa1aa;
+    --gold: #ffb454; --violet: #b07cff; --green: #7fca7f; --blue: #79b0ff; --pink: #ff5d8f;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) { --bg: #f4f5f7; --panel: #ffffff; --edge: #d5d9df; --ink: #15171a; --muted: #5b626c; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  .hazard { height: 10px; background: repeating-linear-gradient(-45deg, #ffcf33 0 12px, #17181c 12px 24px); }
+  header { padding: 40px 16px 24px; text-align: center; }
+  .logo { font: 700 clamp(48px, 12vw, 88px)/1 "Chakra Petch", sans-serif; letter-spacing: .06em; margin: 0; }
+  .logo span:nth-child(1) { color: #ffb454 } .logo span:nth-child(2) { color: #ff4d4d } .logo span:nth-child(3) { color: #7fca7f }
+  .logo span:nth-child(4) { color: #79b0ff } .logo span:nth-child(5) { color: #b07cff } .logo span:nth-child(6) { color: #ff5d8f }
+  .subtitle { font: 600 14px "Chakra Petch", sans-serif; letter-spacing: .3em; color: var(--muted); margin-top: 10px; text-transform: uppercase; }
+  .lang { display: inline-flex; margin-top: 22px; border: 2px solid var(--edge); border-radius: 10px; overflow: hidden; }
+  .lang button { font: 700 14px "Chakra Petch", sans-serif; letter-spacing: .1em; padding: 10px 22px; border: 0; cursor: pointer; background: var(--panel); color: var(--muted); }
+  .lang button.on { background: var(--gold); color: #14161a; }
+  main { max-width: 820px; margin: 0 auto; padding: 0 16px 60px; }
+  .card { background: var(--panel); border: 2px solid var(--edge); border-radius: 14px; padding: 26px 26px 10px; margin-bottom: 18px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  h2 { font: 700 22px "Chakra Petch", sans-serif; letter-spacing: .04em; margin: 0 0 12px; display: flex; align-items: center; gap: 12px; }
+  h2::before { content: ""; width: 6px; height: 24px; border-radius: 3px; background: var(--gold); flex: none; }
+  h3 { font: 700 17px "Chakra Petch", sans-serif; margin: 18px 0 6px; color: var(--gold); }
+  ul { padding-left: 20px; } li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px; border-bottom: 1px solid var(--edge); }
+  th { font: 700 13px "Chakra Petch", sans-serif; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+  .wrap { overflow-x: auto; }
+  a { color: var(--blue); }
+  .toc { columns: 2; column-gap: 28px; padding-left: 20px; }
+  .todo { background: #ffcf33; color: #14161a; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px 16px 40px; }
+  [data-l="en"] { display: none; }
+  body.en [data-l="fr"] { display: none; } body.en [data-l="en"] { display: block; }
+  body.en span[data-l="en"], body.en a[data-l="en"] { display: inline; }
+  @media (max-width: 560px) { .toc { columns: 1; } .card { padding: 20px 18px 6px; } }
+</style>
+</head>
+<body>
+<div class="hazard"></div>
+<header>
+  <h1 class="logo"><span>P</span><span>I</span><span>M</span> <span>P</span><span>A</span><span>M</span></h1>
+  <div class="subtitle"><span data-l="fr">Règles de confidentialité</span><span data-l="en">Privacy Policy</span></div>
+  <div class="lang" role="group" aria-label="Langue / Language">
+    <button id="bfr" class="on" onclick="setLang('fr')">FRANÇAIS</button>
+    <button id="ben" onclick="setLang('en')">ENGLISH</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= FRANÇAIS ======================= -->
+<div data-l="fr">
+  <div class="card">
+    <p class="meta">Dernière mise à jour : 4 octobre 2026</p>
+    <p>Cette page explique quelles données le jeu mobile <strong>PIM PAM</strong> (Android, iOS et version navigateur) utilise, pourquoi, et quels sont tes droits. Nous collectons le strict minimum nécessaire au fonctionnement du jeu.</p>
+    <ol class="toc">
+      <li><a href="#fr-1">Qui sommes-nous</a></li><li><a href="#fr-2">Données utilisées</a></li><li><a href="#fr-3">Publicités</a></li>
+      <li><a href="#fr-4">Achats intégrés</a></li><li><a href="#fr-5">Partenaires</a></li><li><a href="#fr-6">Durée de conservation</a></li>
+      <li><a href="#fr-7">Tes droits</a></li><li><a href="#fr-8">Enfants</a></li><li><a href="#fr-9">Sécurité</a></li><li><a href="#fr-10">Modifications</a></li>
+    </ol>
+  </div>
+
+  <div class="card" id="fr-1">
+    <h2>1. Qui sommes-nous</h2>
+    <p>PIM PAM est édité par <span class="todo">[TON NOM OU NOM DE STUDIO]</span>, développeur indépendant basé en France, responsable du traitement au sens du RGPD.</p>
+    <p>Contact : <span class="todo">[TON ADRESSE E-MAIL]</span></p>
+  </div>
+
+  <div class="card" id="fr-2">
+    <h2>2. Données utilisées par le jeu</h2>
+    <h3>Données enregistrées sur ton appareil</h3>
+    <p>Ta progression (scores, skins, clés, AIV, défis, trophées, réglages) est enregistrée <strong>uniquement sur ton appareil</strong>. Nous n'y avons pas accès. Elle est supprimée si tu désinstalles le jeu ou effaces les données du navigateur.</p>
+    <h3>Classement en ligne et amis</h3>
+    <p>Pour afficher le classement mondial et celui de tes amis, le jeu crée automatiquement un <strong>compte anonyme</strong> (aucune adresse e-mail, aucun mot de passe, aucun nom réel demandé). Sont alors envoyés à notre prestataire Unity Gaming Services :</p>
+    <div class="wrap"><table>
+      <tr><th>Donnée</th><th>Pourquoi</th><th>Base légale</th></tr>
+      <tr><td>Identifiant joueur anonyme généré par le jeu</td><td>Reconnaître ton compte de classement</td><td>Exécution du service</td></tr>
+      <tr><td>Pseudo que tu choisis (ex. THEO#1234)</td><td>L'afficher dans le classement et permettre à tes amis de te retrouver</td><td>Exécution du service</td></tr>
+      <tr><td>Meilleurs scores, niveau, avatar et badge choisis</td><td>Le classement et ton profil public</td><td>Exécution du service</td></tr>
+      <tr><td>Liste des amis que tu ajoutes (stockée sur ton appareil)</td><td>Afficher le classement entre amis</td><td>Exécution du service</td></tr>
+      <tr><td>Données techniques (type d'appareil, version, adresse IP au moment de la connexion)</td><td>Faire fonctionner et sécuriser le service</td><td>Intérêt légitime</td></tr>
+    </table></div>
+    <p>Ton pseudo et tes scores sont <strong>visibles par les autres joueurs</strong>. N'utilise pas ton vrai nom complet ni d'informations personnelles comme pseudo.</p>
+  </div>
+
+  <div class="card" id="fr-3">
+    <h2>3. Publicités</h2>
+    <p>Le jeu propose des <strong>publicités avec récompense</strong>, que tu choisis de regarder (par exemple pour gagner une clé ou une seconde chance). Elles sont fournies par <strong>Google AdMob</strong>.</p>
+    <ul>
+      <li>AdMob peut utiliser l'<strong>identifiant publicitaire</strong> de ton appareil, ton adresse IP et des informations techniques pour afficher des publicités, les mesurer et lutter contre la fraude.</li>
+      <li>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, une fenêtre te demande ton <strong>consentement</strong> au premier lancement. Si tu refuses, tu verras des publicités <strong>non personnalisées</strong>.</li>
+      <li>Sur iPhone, le jeu te demande l'autorisation avant tout suivi (App Tracking Transparency).</li>
+      <li>Tu peux modifier ton choix à tout moment depuis les paramètres du jeu, ou réinitialiser ton identifiant publicitaire dans les réglages de ton téléphone.</li>
+    </ul>
+    <p>En savoir plus : <a href="https://policies.google.com/technologies/partner-sites?hl=fr" target="_blank" rel="noopener">comment Google utilise les données des applications partenaires</a>.</p>
+  </div>
+
+  <div class="card" id="fr-4">
+    <h2>4. Achats intégrés</h2>
+    <p>Les achats de monnaie virtuelle (AIV) sont traités par <strong>Google Play</strong> ou l'<strong>App Store</strong>. Nous ne recevons <strong>jamais</strong> tes informations bancaires : seulement une confirmation que l'achat a réussi, pour te créditer tes AIV.</p>
+  </div>
+
+  <div class="card" id="fr-5">
+    <h2>5. Nos partenaires</h2>
+    <div class="wrap"><table>
+      <tr><th>Partenaire</th><th>Rôle</th><th>Leur politique</th></tr>
+      <tr><td>Unity Technologies</td><td>Moteur du jeu, compte anonyme, classement en ligne</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Politique de Unity</a></td></tr>
+      <tr><td>Google (AdMob)</td><td>Publicités avec récompense</td><td><a href="https://policies.google.com/privacy?hl=fr" target="_blank" rel="noopener">Règles de Google</a></td></tr>
+      <tr><td>Google Play / Apple App Store</td><td>Téléchargement et achats intégrés</td><td><a href="https://policies.google.com/privacy?hl=fr" target="_blank" rel="noopener">Google</a> · <a href="https://www.apple.com/fr/legal/privacy/" target="_blank" rel="noopener">Apple</a></td></tr>
+      <tr><td>itch.io (version navigateur)</td><td>Hébergement de la version web</td><td><a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">Politique d'itch.io</a></td></tr>
+    </table></div>
+    <p>Certains de ces partenaires peuvent traiter des données en dehors de l'Union européenne (notamment aux États-Unis). Ces transferts sont encadrés par les garanties prévues par le RGPD (clauses contractuelles types de la Commission européenne ou cadre de protection des données UE–États-Unis).</p>
+    <p>Nous ne vendons aucune donnée personnelle.</p>
+  </div>
+
+  <div class="card" id="fr-6">
+    <h2>6. Durée de conservation</h2>
+    <ul>
+      <li>Données de progression : sur ton appareil, jusqu'à la désinstallation.</li>
+      <li>Compte de classement en ligne : tant que tu joues ; il est supprimé sur simple demande (voir ci-dessous).</li>
+      <li>Données publicitaires : selon les règles de Google.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="fr-7">
+    <h2>7. Tes droits</h2>
+    <p>Conformément au RGPD, tu peux demander l'<strong>accès</strong>, la <strong>rectification</strong> ou la <strong>suppression</strong> de tes données, t'<strong>opposer</strong> à leur traitement ou retirer ton consentement à tout moment.</p>
+    <p>Pour supprimer ton compte de classement en ligne, écris-nous à <span class="todo">[TON ADRESSE E-MAIL]</span> en indiquant ton code ami (visible dans ton profil, ex. THEO#1234). Nous traitons les demandes sous 30 jours.</p>
+    <p>Tu peux aussi déposer une réclamation auprès de la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>.</p>
+  </div>
+
+  <div class="card" id="fr-8">
+    <h2>8. Enfants</h2>
+    <p>PIM PAM n'est pas destiné aux enfants de moins de 13 ans. En France, si tu as moins de 15 ans, l'accord d'un parent est nécessaire pour accepter les publicités personnalisées. Si tu es parent et penses que ton enfant nous a transmis des données, contacte-nous : nous les supprimerons.</p>
+  </div>
+
+  <div class="card" id="fr-9">
+    <h2>9. Sécurité</h2>
+    <p>Les échanges entre le jeu et les serveurs de classement sont chiffrés (HTTPS). Le compte en ligne est anonyme et ne contient ni mot de passe ni coordonnées.</p>
+  </div>
+
+  <div class="card" id="fr-10">
+    <h2>10. Modifications</h2>
+    <p>Cette page peut évoluer, par exemple si une nouvelle fonctionnalité est ajoutée. La date de mise à jour en haut de page sera alors modifiée.</p>
+  </div>
+</div>
+
+<!-- ======================= ENGLISH ======================= -->
+<div data-l="en">
+  <div class="card">
+    <p class="meta">Last updated: October 4, 2026</p>
+    <p>This page explains what data the mobile game <strong>PIM PAM</strong> (Android, iOS and browser version) uses, why, and what your rights are. We only collect what the game strictly needs to work.</p>
+    <ol class="toc">
+      <li><a href="#en-1">Who we are</a></li><li><a href="#en-2">Data used</a></li><li><a href="#en-3">Advertising</a></li>
+      <li><a href="#en-4">In-app purchases</a></li><li><a href="#en-5">Partners</a></li><li><a href="#en-6">Retention</a></li>
+      <li><a href="#en-7">Your rights</a></li><li><a href="#en-8">Children</a></li><li><a href="#en-9">Security</a></li><li><a href="#en-10">Changes</a></li>
+    </ol>
+  </div>
+
+  <div class="card" id="en-1">
+    <h2>1. Who we are</h2>
+    <p>PIM PAM is published by <span class="todo">[YOUR NAME OR STUDIO NAME]</span>, an independent developer based in France, acting as data controller under the GDPR.</p>
+    <p>Contact: <span class="todo">[YOUR E-MAIL ADDRESS]</span></p>
+  </div>
+
+  <div class="card" id="en-2">
+    <h2>2. Data used by the game</h2>
+    <h3>Data stored on your device</h3>
+    <p>Your progress (scores, skins, keys, AIV, challenges, trophies, settings) is stored <strong>only on your device</strong>. We cannot access it. It is deleted if you uninstall the game or clear your browser data.</p>
+    <h3>Online leaderboard and friends</h3>
+    <p>To show the world and friends leaderboards, the game automatically creates an <strong>anonymous account</strong> (no e-mail, no password, no real name required). The following is sent to our provider Unity Gaming Services:</p>
+    <div class="wrap"><table>
+      <tr><th>Data</th><th>Why</th><th>Legal basis</th></tr>
+      <tr><td>Anonymous player ID generated by the game</td><td>Recognise your leaderboard account</td><td>Performance of the service</td></tr>
+      <tr><td>Nickname you choose (e.g. THEO#1234)</td><td>Show it on the leaderboard and let friends find you</td><td>Performance of the service</td></tr>
+      <tr><td>Best scores, level, chosen avatar and badge</td><td>Leaderboard and public profile</td><td>Performance of the service</td></tr>
+      <tr><td>Friends you add (stored on your device)</td><td>Show the friends leaderboard</td><td>Performance of the service</td></tr>
+      <tr><td>Technical data (device type, version, IP address when connecting)</td><td>Run and secure the service</td><td>Legitimate interest</td></tr>
+    </table></div>
+    <p>Your nickname and scores are <strong>visible to other players</strong>. Do not use your full real name or personal information as a nickname.</p>
+  </div>
+
+  <div class="card" id="en-3">
+    <h2>3. Advertising</h2>
+    <p>The game offers <strong>rewarded ads</strong> that you choose to watch (for example to earn a key or a second chance). They are provided by <strong>Google AdMob</strong>.</p>
+    <ul>
+      <li>AdMob may use your device's <strong>advertising ID</strong>, IP address and technical information to serve and measure ads and prevent fraud.</li>
+      <li>In the European Economic Area, the United Kingdom and Switzerland, a window asks for your <strong>consent</strong> on first launch. If you decline, you will see <strong>non-personalised</strong> ads.</li>
+      <li>On iPhone, the game asks your permission before any tracking (App Tracking Transparency).</li>
+      <li>You can change your choice at any time in the game settings, or reset your advertising ID in your phone settings.</li>
+    </ul>
+    <p>Learn more: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from partner apps</a>.</p>
+  </div>
+
+  <div class="card" id="en-4">
+    <h2>4. In-app purchases</h2>
+    <p>Purchases of virtual currency (AIV) are processed by <strong>Google Play</strong> or the <strong>App Store</strong>. We <strong>never</strong> receive your payment details — only a confirmation that the purchase succeeded, so we can credit your AIV.</p>
+  </div>
+
+  <div class="card" id="en-5">
+    <h2>5. Our partners</h2>
+    <div class="wrap"><table>
+      <tr><th>Partner</th><th>Role</th><th>Their policy</th></tr>
+      <tr><td>Unity Technologies</td><td>Game engine, anonymous account, online leaderboard</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity policy</a></td></tr>
+      <tr><td>Google (AdMob)</td><td>Rewarded ads</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google policy</a></td></tr>
+      <tr><td>Google Play / Apple App Store</td><td>Download and in-app purchases</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a> · <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a></td></tr>
+      <tr><td>itch.io (browser version)</td><td>Hosting of the web version</td><td><a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">itch.io policy</a></td></tr>
+    </table></div>
+    <p>Some partners may process data outside the European Union (notably in the United States). These transfers are covered by GDPR safeguards (European Commission standard contractual clauses or the EU–US Data Privacy Framework).</p>
+    <p>We do not sell any personal data.</p>
+  </div>
+
+  <div class="card" id="en-6">
+    <h2>6. Retention</h2>
+    <ul>
+      <li>Progress data: on your device, until you uninstall the game.</li>
+      <li>Online leaderboard account: as long as you play; deleted on request (see below).</li>
+      <li>Advertising data: according to Google's rules.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="en-7">
+    <h2>7. Your rights</h2>
+    <p>Under the GDPR, you can request <strong>access</strong> to, <strong>correction</strong> or <strong>deletion</strong> of your data, <strong>object</strong> to its processing, or withdraw your consent at any time.</p>
+    <p>To delete your online leaderboard account, e-mail us at <span class="todo">[YOUR E-MAIL ADDRESS]</span> with your friend code (shown in your profile, e.g. THEO#1234). Requests are handled within 30 days.</p>
+    <p>You can also lodge a complaint with your data protection authority (in France: the <a href="https://www.cnil.fr/en" target="_blank" rel="noopener">CNIL</a>).</p>
+  </div>
+
+  <div class="card" id="en-8">
+    <h2>8. Children</h2>
+    <p>PIM PAM is not directed at children under 13. If you are a parent and believe your child has sent us data, contact us and we will delete it.</p>
+  </div>
+
+  <div class="card" id="en-9">
+    <h2>9. Security</h2>
+    <p>Communication between the game and the leaderboard servers is encrypted (HTTPS). The online account is anonymous and holds no password or contact details.</p>
+  </div>
+
+  <div class="card" id="en-10">
+    <h2>10. Changes</h2>
+    <p>This page may change, for example when a new feature is added. The "last updated" date at the top will then be updated.</p>
+  </div>
+</div>
+
+</main>
+<footer>© 2026 PIM PAM — <span data-l="fr">Tous droits réservés</span><span data-l="en">All rights reserved</span></footer>
+<div class="hazard"></div>
+
+<script>
+  function setLang(l) {
+    document.body.classList.toggle("en", l === "en");
+    document.documentElement.lang = l;
+    document.getElementById("bfr").classList.toggle("on", l === "fr");
+    document.getElementById("ben").classList.toggle("on", l === "en");
+    try { localStorage.setItem("pp_lang", l); } catch (e) {}
+  }
+  var saved = null; try { saved = localStorage.getItem("pp_lang"); } catch (e) {}
+  setLang(saved || ((navigator.language || "fr").toLowerCase().indexOf("fr") === 0 ? "fr" : "en"));
+</script>
+</body>
+</html>
